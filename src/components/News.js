@@ -65,15 +65,46 @@ export class News extends Component {
     //   articles: this.articles,
       articles: [],
       loading: false,
+      page:1
     };
   }
 
   async componentDidMount(){
-let url = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=fa7ce0c23595450db3e3d86aebbababb";
+let url = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=fa7ce0c23595450db3e3d86aebbababb&page=1&pageSize=20";
 let data = await fetch(url);
 let parsedData = await data.json()
-this.setState({articles: parsedData.articles})
+this.setState({articles: parsedData.articles, totalResults: parsedData.totalResults})
   }
+
+   handlePrevClick = async()=> {
+    console.log('next');
+    let url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=fa7ce0c23595450db3e3d86aebbababb&page=${this.state.page - 1}&pageSize=20`;
+let data = await fetch(url);
+let parsedData = await data.json()
+    this.setState({
+    page: this.state.page - 1,
+    articles: parsedData.articles
+    })
+}
+  
+
+   handleNextClick = async()=> {
+    console.log('next');
+    if ( this.state.page + 1  > Math.ceil(this.state.totalResults/20)){
+
+    }
+    else{
+    let url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=fa7ce0c23595450db3e3d86aebbababb&page=${this.state.page + 1}&pageSize=20`;
+let data = await fetch(url);
+let parsedData = await data.json()
+    this.setState({
+    page: this.state.page + 1,
+    articles: parsedData.articles
+    })
+}
+}
+
+
 
   render() {
     return (
@@ -94,6 +125,10 @@ this.setState({articles: parsedData.articles})
               </div>
             );
           })}
+        </div>
+        <div className="container my-3 d-flex justify-content-between">
+        <button type="button" disabled={this.state.page<=1} className="btn btn-dark" onClick={this.handlePrevClick}>&larr; Previous</button>
+        <button type="button" className="btn btn-dark" onClick={this.handleNextClick}>Next &rarr;</button>
         </div>
       </div>
     );
