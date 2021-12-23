@@ -3,6 +3,7 @@ import NewsItem from "./NewsItem";
 import Spinner from "./Spinner";
 import PropTypes from "prop-types";
 import InfiniteScroll from "react-infinite-scroll-component";
+// import LoadingBar from 'react-top-loading-bar';
 
 
 export class News extends Component {
@@ -33,15 +34,17 @@ capitaliseFirstLetter = (string)=> {
   }
 
   async updateNews() {
+      this.props.setProgress(0);
     const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=fa7ce0c23595450db3e3d86aebbababb&page=${this.state.page}&pageSize=${this.props.pageSize}`;
     this.setState({ loading: true });
     let data = await fetch(url);
     let parsedData = await data.json();
     this.setState({
       articles: parsedData.articles,
-      totalResults: parsedData.totalResults
+      totalResults: parsedData.totalResults,
     //   loading: false,
     });
+    this.props.setProgress(100);
   }
 
   async componentDidMount() {
