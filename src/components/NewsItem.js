@@ -11,7 +11,7 @@ export class NewsItem extends Component {
             <div style={
                 {display: 'flex ', justifyContent: 'flex-end', position:'absolute', right:'0'}
             }>
-            <span class="position-absolute top-0 translate-middle badge rounded-pill bg-danger">
+            <span className="position-absolute top-0 translate-middle badge rounded-pill bg-danger">
     {source}
   
   </span>
