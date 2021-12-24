@@ -3,27 +3,27 @@
   "totalResults": 4,
   "articles": [
     {
-      "source": { "id": "news24", "name": "News24" },
-      "author": "Compiled by Sibusiso Mjikeliso",
-      "title": "PICTURES | Indian cricket team officially lands in SA for summer tour",
-      "description": "The visiting Indian cricket team was pictured officially landing in South Africa for their summer tour beginning with the Boxing Day Test against the Proteas in Centurion.",
-      "url": "https://www.news24.com/sport/Cricket/Proteas/pictures-indian-cricket-team-officially-lands-in-sa-for-summer-tour-20211216",
-      "urlToImage": "https://cdn.24.co.za/files/Cms/General/d/372/8899610f02b04c5aaf63f930d759f9ca.jpg",
-      "publishedAt": "2021-12-16T17:50:46+00:00",
-      "content": "South Africa\r\nDean Elgar (captain, Titans), Temba Bavuma (vice-captain, Lions), Quinton de Kock (wicketkeeper, Titans), Kagiso Rabada (Lions), Sarel Erwee (Dolphins), Beuran Hendricks (Western Provin… [+795 chars]"
+      "source": {"id": "news24", "name": "News24"},
+      "author": "Sibusiso Mjikeliso",
+      "title": "Cricket SA wants to 'get to the bottom' of Nkwe resignation concerns, says CEO | Sport",
+      "description": "Acting Cricket South Africa CEO Pholetsi Moseki says the board is concerned about the issues former Proteas assistant coach Enoch Nkwe raised in his resignation.",
+      "url": "https://www.news24.com/sport/Cricket/Proteas/cricket-sa-wants-to-get-to-the-bottom-of-nkwe-resignation-concerns-says-ceo-20210826",
+      "urlToImage": "https://cdn.24.co.za/files/Cms/General/d/10743/97d776dc91734e98906c0e1b7f3b1afa.jpg",
+      "publishedAt": "2021-08-26T11:40:16+00:00",
+      "content": "<ul><li>Cricket South Africa has committed to \"getting to the bottom\" of Enoch Nkwe's sudden resignation as Proteas assistant coach. </li><li>Nkwe voiced concerns with the current culture and working… [+3497 chars]"
     },
     {
-      "source": { "id": "bbc-sport", "name": "BBC Sport" },
-      "author": "BBC Sport",
-      "title": "'Ashes at stake one day into second Test'",
-      "description": "There have only been five days' cricket in the Ashes, but England already face being overwhelmed by Australia, writes Stephan Shemilt.",
-      "url": "http://www.bbc.co.uk/sport/cricket/59657067",
-      "urlToImage": "https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/51DA/production/_122245902_joerootandjosbuttler.jpg",
-      "publishedAt": "2021-12-16T15:07:25.4028633Z",
-      "content": "It started as a dream.\r\nFor a few hours on a cold winter night, English cricket fans could have been forgiven for sleepy thoughts turning to 2005.\r\nEngland had been hammered in the first Ashes Test, … [+4875 chars]"
+      "source": {"id": "abc-news-au", "name": "ABC News (AU)"},
+      "author": "ABC News",
+      "title": "England cricket great Ted Dexter dies aged 86",
+      "description": "The former England captain, nicknamed \"Lord Ted\", is fondly remembered as a giant of the game and one of his country's greatest players.",
+      "url": "http://www.abc.net.au/news/2021-08-26/england-cricket-great-ted-dexter-dies-aged-86/100411276",
+      "urlToImage": "https://live-production.wcms.abc-cdn.net.au/1006c7ecf34ec0935eef2aade5017711?impolicy=wcms_crop_resize&cropH=2815&cropW=5004&xPos=0&yPos=223&width=862&height=485",
+      "publishedAt": "2021-08-26T09:07:52Z",
+      "content": "Former England captain Ted Dexter has died aged 86 following a recent illness.\r\n<ul><li>Dexter played 62 Tests for England and was captain on 30 occasions</li><li>He was inducted into the ICC Hall of… [+1746 chars]"
     },
     {
-      "source": { "id": "espn-cric-info", "name": "ESPN Cric Info" },
+      "source": {"id": "espn-cric-info", "name": "ESPN Cric Info"},
       "author": null,
       "title": "PCB hands Umar Akmal three-year ban from all cricket | ESPNcricinfo.com",
       "description": "Penalty after the batsman pleaded guilty to not reporting corrupt approaches | ESPNcricinfo.com",
@@ -33,7 +33,7 @@
       "content": "Umar Akmal's troubled cricket career has hit its biggest roadblock yet, with the PCB handing him a ban from all representative cricket for three years after he pleaded guilty of failing to report det… [+1506 chars]"
     },
     {
-      "source": { "id": "espn-cric-info", "name": "ESPN Cric Info" },
+      "source": {"id": "espn-cric-info", "name": "ESPN Cric Info"},
       "author": null,
       "title": "What we learned from watching the 1992 World Cup final in full again | ESPNcricinfo.com",
       "description": "Wides, lbw calls, swing - plenty of things were different in white-ball cricket back then | ESPNcricinfo.com",
